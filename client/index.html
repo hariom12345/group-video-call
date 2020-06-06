@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Enablex Conference</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery.toast.css" />
+    <link rel="shortcut icon" type="image/png" href="/img/enablex.png" />
+    <link rel="stylesheet" href="css/jquery.toast.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  </head>
+
+  <body>
+    <body>
+      <!-- <div class="container">
+        <section id="content">
+          <div class="loading">Loading....</div>
+          <div
+            class="login_join_div"
+            style="display: block; padding-bottom: 25px;"
+          >
+            <form action="" id="login_form">
+              <h1>Mobile Programming Conference</h1>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="nameText"
+                  name="nameText"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Enter Room ID"
+                  id="roomName"
+                  name="roomName"
+                />
+              </div>
+              <div>
+                <h3 style="color: #504357; font-size: 14px;">Select Role</h3>
+                <input
+                  type="radio"
+                  name="usertype"
+                  value="moderator"
+                  id="moderator"
+                />
+                Moderator&nbsp;
+                <input
+                  type="radio"
+                  name="usertype"
+                  value="participant"
+                  id="participant"
+                  checked
+                />
+                Participant&nbsp;
+              </div>
+              <div
+                class="row col-md-12"
+                style="
+                  margin-top: 10px;
+                  text-align: left;
+                  margin-left: 9px;
+                  font-size: 13px;
+                "
+              >
+                <input
+                  type="checkbox"
+                  name="agree"
+                  style="height: 15px; width: 15px;"
+                  checked
+                />
+                <label
+                  >I agree to
+                  <a target="_blank" href="https://www.enablex.io/legals/tou/"
+                    >Terms of Use</a
+                  >
+                  and
+                  <a
+                    target="_blank"
+                    href="https://www.enablex.io/legals/privacy-policy/"
+                    >Privacy Policy</a
+                  >
+                </label>
+              </div>
+              <div class="row col-md-12" style="margin-top: 20px;">
+                <div class="col-md-6" style="">
+                  <input
+                    type="submit"
+                    value="Join"
+                    class="login_buttons"
+                    id="joinRoom"
+                  />
+                </div>
+                <div
+                  id="create_room_div"
+                  class="col-md-12"
+                  style="margin-top: 10px;"
+                >
+                  <span style="font-size: 12px; color: #777; margin-top: 32px;"
+                    >Don't have a Room ID?
+                    <a href="javascript:void(0)" id="create_room" class=""
+                      >Create here</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <span id="message" style="color: red;"></span>
+              <br /><br /><br />
+            </form>
+          </div>
+        </section>
+        <div
+          class="footer"
+          style="
+            position: relative;
+            margin-top: 30px;
+            text-align: center;
+            color: white;"
+        >
+          &copy; Mobile Programming LLC All Rights Reserved.
+        </div>
+      </div> -->
+
+
+      <!-- container -->
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="card">
+              <h5 class="card-header colored">Begin New Session</h5>
+              <div class="card-body col-body">
+                <div class="row">
+                  <!-- <div class="col-sm-7">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        [(ngModel)]="sessionKey"
+                        aria-describedby="emailHelp"
+                        placeholder="Auto generated session ID"
+                        (keyup)="changeVal()"
+                      />
+                    </div>
+                    <span *ngIf="!isSessionValid" class="invalid-session"
+                      >Invalid session key.</span
+                    >
+                  </div> -->
+                  <div class="col-sm-12">
+                    <!-- <a class="gradient-button gradient-button-4" (click)="beginSession()">Begin Session</a> -->
+                    <form action="" id="login_form">
+                        <!-- <div>
+                            <input type="text" placeholder="Enter Name" id="nameText" name="nameText" value="Demo-Session" />
+                        </div> -->
+                        <div style="visibility: hidden;">
+                            <input type="text" placeholder="Enter Room ID" id="roomName" name="roomName" value="5ed2af62b883705f1e3b1f55" />
+                        </div>
+                        <div style="visibility: hidden;">
+                            <input type="radio" name="usertype" value="moderator" id="moderator" />
+                            Moderator&nbsp;
+                            <input type="radio" name="usertype" value="participant" id="participant" checked />
+                            Participant&nbsp;
+                        </div>
+                        <div class="col-sm-12" style=" display: flex; align-items: center;">
+                            <input type="text" class="form-control" placeholder="Enter Name" id="nameText" name="nameText"/>
+                            <input type="submit" value="Begin Session" class="login_buttons gradient-button gradient-button-4" id="joinRoom" />
+                        </div>
+                        <a href="javascript:void(0)" id="create_room" class=""></a>
+                        <input type="checkbox" name="agree" style="height: 0px; width: 0px;" checked/>
+                        <span id="message" style="color: red;"></span>
+                        <br /><br /><br />
+                    </form>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7 row">
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="img/img1.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Card title</h5> -->
+                  <p class="card-text">Demo1</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="img/img1.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Card title</h5> -->
+                  <p class="card-text">Demo</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                class="card-img-top"
+                src="img/img1.jpg"
+                alt="Card image cap"
+              />
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Card title</h5> -->
+                  <p class="card-text">Demo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-sm-12">
+            <img
+              class="w-100"
+              src="img/bigimg.jpg"
+              alt="Card image cap"
+            />
+          </div>
+        </div>
+      </div>
+    </body>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.toast.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/room.js"></script>
+  </body>
+</html>
