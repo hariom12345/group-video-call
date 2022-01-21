@@ -21,7 +21,7 @@
     "express-session": "^1.15.6",
     "http-auth": "^3.2.3",
     "localStorage": "^1.0.3",
-    "log4js": "^1.0.1",
+    "log4js": "^6.4.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "btoa": "^1.1.2",
